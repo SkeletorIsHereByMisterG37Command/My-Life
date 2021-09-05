@@ -1,0 +1,449 @@
+/*
+  62.5% of the default font size (16 pixels in most browsers) are 10 pixels so:
+  0.625rem=10px.
+  1rem=16px.
+*/
+body {
+  font-size: 62.5%;
+  font-family: 'Montserrat', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  line-height: 73.5px;
+  background-color: #fff59d;
+  color: #0275d8;
+  overflow-x: hidden;
+}
+
+/* ********************************** my landing page styline ************************************ */
+
+/* styling the wrapping container of the navigation bar */
+.my_header {
+  font-size: 2.125rem;
+  opacity: 0.6;
+  position: relative;
+}
+
+/* To help with the space between the navigation bar items and the images */
+.navbar-nav, .mr-auto, .images {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: auto !important;
+}
+
+/* The hover effect on the navigation bar items is designed here */
+.navbar-nav > li > a:hover {
+    color: blue !important;
+    background-color: yellow;
+    border-radius: 25px;
+}
+
+/* Background color for the dropdown menu is designed here */
+.dropdown-menu {
+  background-color: blue;
+}
+
+/* The dropdown menu items are designed here */
+.dropdown-menu > li > a {
+  color: #fff59d;
+  font-size: 1.62rem;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+/* Hover effect on the dropdown items is designed here */
+.dropdown-menu > li > a:hover {
+  background-color: #7C83FD;
+  color: #fff59d;
+}
+
+/* for achieving space between the images and between the navigation bar to the images */
+.images {
+  margin: 20px 20px 0 20px !important;
+}
+
+#fullstack_image {
+  height: 250px;
+  width: 700px;
+}
+
+.figure-caption {
+  font-size: 1.12rem;
+  font-weight: bolder;
+  font-style: italic;
+  font-variant: small-caps;
+  color: blue;
+  line-height: 1.5;
+}
+
+.animation_wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 23% auto 0;
+  width: 99%;
+  height: 100px;
+}
+
+#firey_soccer_ball_animation {
+  position: absolute;
+  animation: move_soccer_ball_animation 10s infinite alternate;
+  height: 100px;
+  top: 40px;
+}
+
+@keyframes move_soccer_ball_animation {
+  from {right: -5%;}
+  to {right: 90%;}
+}
+
+/* ******************************** my life page styling ************************************** */
+
+#MyCarouselFade {
+  position: absolute;
+  width: 73%;
+  margin: 40px 5% 0;
+}
+
+
+/* Override some Bootstrap default styling values for the caousel slide arrows */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+  padding-top: 7%;
+}
+
+/* Adding more space between the carousel slide arrows to the carousel slide image */
+/* Changing the carousel arrows color with the fill url attribute */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  margin-left: -43%;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  margin-right: -43%;
+}
+
+/* changing the carousel indicators background color */
+.carousel .carousel-indicators button {background-color: #04009A !important;}
+.carousel .carousel-indicators .active {background-color: #E93B81 !important;}
+
+/* for slides containing just text */
+.p-carousel-item {
+  background-color: #FFC947;
+  color: #185ADB;
+  text-align: center;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 1.22rem;
+}
+
+/* styling the accordion wrapping container */
+.my_accordion {
+  margin: 2.1% 5% 0;
+  width: 39%;
+}
+
+
+/* styling the button that open's and close's the accordion  */
+.h2_accordion_button {
+  font-weight: bolder;
+  font-variant: small-caps;
+  font-style: italic;
+  color: #00A8CC;
+  background-color: #F5FCC1;
+  font-size: 1.42rem;
+}
+
+
+/* styling the accordion items */
+.accordion-item {
+  background-color: #7C83FD;
+  color: gold;
+  font-size: 1.32rem;
+  font-variant: small-caps;
+  font-style: italic;
+}
+
+
+
+
+/* ********************************** Contact me page styling ******************************** */
+
+.contact_me_h1 {
+  color: #FFD369;
+}
+
+.contact_me_h2 {
+  color: #F9813A;
+}
+
+.contact_me_h2, .contact_me_h3, .icons_wrapper {
+  margin: 1.5% 0 7% 3%;
+}
+
+.contact_me_h3 {
+  font-size: 1.12rem;
+  color: #FFD5CD;
+  padding-bottom: 3px;
+  border-bottom: 3px solid yellow;
+  margin-bottom: 3%;
+  width: 55%;
+}
+
+/* adding space between each contact icon (twitter, facebook, etc.) */
+.icon {
+  margin-right: 3%;
+}
+
+.twitter_icon {
+  color: gold;
+}
+
+.facebook_icon {
+  color: blue;
+}
+
+.facebook_messenger_icon {
+  color: cyan;
+}
+
+.instagram_icon {
+  color: red;
+}
+
+.twitch_icon {
+  color: pink;
+}
+
+.pinterest_icon {
+  color: lime;
+}
+
+.google_plus_icon {
+  color: #892CDC;
+}
+
+/* styling the form */
+.my_contact_me_form {
+  width: 95%;
+  margin: 4% auto 0;
+  height: 92%;
+  border: 3px solid white;
+  padding: 0 2% 2% 2%;
+}
+
+/* general styling for all the labels in the form */
+label {
+  font-size: 1.06rem;
+  color: #EDC988;
+}
+
+/* general styling for all the input fields in the form */
+input {
+  margin: 0 1% 1% 2%;
+  width: 73%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+#FullName {
+  width: 74.5%
+}
+
+/* styling the text shown inside the input fields and the textarea field */
+::placeholder {
+  color: blue;
+  position: absolute;
+}
+
+#Email {
+  width: 83%;
+}
+
+/* styling the text inside the option select field */
+select {
+  margin: 0 1% 1% 2%;
+  width: 78%;
+  color: blue;
+}
+
+textarea {
+  resize: vertical;
+  width: 98.5%;
+  height: 60px;
+  border-radius: 5px;
+  line-height: normal;
+  margin-bottom: -25px;
+}
+
+#Submit {
+  width: 23%;
+  height: 13%;
+  margin-bottom: 0.5%;
+  line-height: normal;
+  margin-left: 0;
+  color: white;
+  font-size: 1.06rem;
+}
+
+#Submit:hover {
+  color: yellow;
+  background-color: blue;
+}
+
+
+/* ************************************ styling the riddles page ****************************** */
+
+.riddles_page_main_section {
+  display: flex;
+  height: 100%;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+.side_navigation_bar_container {
+  height: 79%;
+  width: 250px;
+  background-color: #11101D;
+  text-align: center;
+  color: #fff;
+  font-size: 1.82rem;
+}
+
+.side_navigation_bar_h1_bottom_border {
+  border-bottom: 5px solid #fff;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.side_navigation_bar_buttons_container {
+  padding-bottom: 20px;
+}
+
+.side_navigation_bar_button {
+  width: 200px;
+}
+
+.the_riddle_box {
+  margin-left: 20px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.12rem;
+  width: 83%;
+  background-color: #11101D;
+}
+
+.riddle_bottom_border {
+  border-bottom: 5px solid #fff;
+  width: 18%;
+  margin-bottom: 30px;
+}
+
+.the_answer_to_the_riddle_container {
+  margin-top: 30px;
+}
+
+.the_answer_to_the_riddle_bottom_border {
+  border-bottom: 5px solid #fff;
+  margin-bottom: 30px;
+  width: 25%;
+}
+
+#RIDDLE_1_BOX, #RIDDLE_2_BOX, #RIDDLE_3_BOX , #answer_1, #answer_2, #answer_3 {
+  display: none;
+}
+
+.the_riddle, .the_riddle_answer {
+  color: #64C9CF;
+}
+
+#give_up_button_1, #give_up_button_2, #give_up_button_3, #give_up_button_4 {
+  width: 250px;
+}
+
+/* ********************************* my_friends page styling *********************************** */
+
+.my_images_row {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.friends_images {
+  opacity: 0.8;
+  box-shadow: 15px 15px 15px blue;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.friends_images:hover {
+  opacity: 1;
+  transform: rotate3d(1, -1, 0, 35deg);
+  border-radius: 6%;
+  cursor: pointer;
+}
+
+/* .display_image_data_wrapper {
+  height: 350px;
+  width: 98.5%;
+  margin: 0 auto;
+  background-color: #222831;
+  display: none;
+} */
+
+
+.show_more_friends_button {
+  color: blue;
+  border-radius: 25%;
+  margin-top: 22px;
+  margin-left: 20px;
+  border: 5px solid red;
+  text-shadow: 2px 2px 8px #ff0000;
+}
+
+.show_more_friends_button:hover {
+  cursor: pointer;
+  border: 5px solid red;
+}
+
+#Show_more_friends_button {
+  display: none;
+}
+
+
+
+
+.image_data_table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image_data_table, th, td {
+  border: 5px solid white;
+  border-collapse: collapse;
+  padding: 15px;
+  font-size: 1.12rem;
+}
+
+td {
+  text-align: center;
+}
+
+#table_wrapper {
+  position: relative;
+  background-color: #222831;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ******************************** food page styling ******************* */

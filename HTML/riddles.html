@@ -1,0 +1,173 @@
+<!-- The riddles.html page -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- My website title -->
+        <title>My Life</title>
+
+        <!-- font family for the header taken from the internet -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <!-- font awesome script for icons -->
+        <script src="https://kit.fontawesome.com/476dc6f697.js" crossorigin="anonymous"></script>
+
+        <!-- My CSS stylesheet -->
+        <link rel="stylesheet" href="../CSS/my_stylesheet.css">
+
+        <!-- Bootstrap scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <nav class="my_header navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-warning" aria-current="page" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-warning" id="my_life_page_link" href="my_life.html">My Life</a></li>
+                        <li class="nav-item me-2"><a class="nav-link text-warning" href="contact_me.html">Contact Me</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-warning dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">My Dog</a></li>
+                                <li><a class="dropdown-item" href="food.html">Favorite Food</a></li>
+                                <li><a class="dropdown-item" href="my_friends.html">My Friends</a></li>
+                                <li><a class="dropdown-item" id="call_from_riddles_page_to_vanish_riddles" href="#" onclick="vanish_all_riddles()">Riddles</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="riddles_page_main_section container-fluid">
+            <div class="side_navigation_bar_container">
+                <div class="h1">
+                    Riddles
+                    <div class="side_navigation_bar_h1_bottom_border"></div>
+                </div>
+                <div class="side_navigation_bar_buttons_container">
+                    <button type="button" class="side_navigation_bar_button btn btn-outline-warning" id="riddle_1" onclick="get_click(this.id)">Riddle 1</button>
+                    <button type="button" class="side_navigation_bar_button btn btn-outline-warning" id="riddle_2" onclick="get_click(this.id)">Riddle 2</button>
+                    <button type="button" class="side_navigation_bar_button btn btn-outline-warning" id="riddle_3" onclick="get_click(this.id)">Riddle 3</button>
+                    <button type="button" class="side_navigation_bar_button btn btn-outline-warning" id="riddle_4" onclick="get_click(this.id)">Riddle 4</button>
+                    <button type="button" class="side_navigation_bar_button btn btn-outline-warning" id="riddle_5" onclick="get_click(this.id)">Riddle 5</button>
+                    <button type="button" class="side_navigation_bar_button btn btn-outline-warning" id="riddle_6" onclick="get_click(this.id)">Riddle 6</button>
+                </div>
+            </div>
+            <div class="the_riddle_box" id="RIDDLE_1_BOX">
+                <div class="h2">Riddle 1 :</div>
+                <div class="riddle_bottom_border"></div>
+                <div class="the_riddle">
+                    Think how an equation like &nbsp;2 + 30 + 30 = 3 &nbsp;is a true statement &nbsp;???
+                </div>
+                <button type="button" class="btn btn-outline-danger" id="give_up_button_1" onclick="show_answer(this.id)">&#129488;&nbsp; I Give Up &nbsp;&#129488;</button>
+                <div class="the_answer_to_the_riddle_container" id="answer_1">
+                    <div class="h2">The Answer :</div>
+                    <div class="the_answer_to_the_riddle_bottom_border"></div>
+                    <div class="the_riddle_answer">
+                        A clock .
+                        <br>
+                        2 &nbsp;O'clock plus &nbsp;30 &nbsp;minutes plus &nbsp;30 &nbsp;minutes &nbsp;= &nbsp;3 &nbsp; O'clock .
+                    </div>
+                </div>
+            </div>
+            <div class="the_riddle_box" id="RIDDLE_2_BOX">
+                <div class="h2">Riddle 2 :</div>
+                <div class="riddle_bottom_border"></div>
+                <div class="the_riddle">
+                    What has to be broken before you can use it ???
+                </div>
+                <button type="button" class="btn btn-outline-danger" id="give_up_button_2" onclick="show_answer(this.id)">&#129488;&nbsp; I Give Up &nbsp;&#129488;</button>
+                <div class="the_answer_to_the_riddle_container" id="answer_2">
+                    <div class="h2">The Answer :</div>
+                    <div class="the_answer_to_the_riddle_bottom_border"></div>
+                    <div class="the_riddle_answer">
+                        A fried egg .
+                    </div>
+                </div>
+            </div>
+            <div class="the_riddle_box" id="RIDDLE_3_BOX">
+                <div class="h2">Riddle 3 :</div>
+                <div class="riddle_bottom_border"></div>
+                <div class="the_riddle">
+                    I’m tall when I’m young, and I’m short when I’m old.
+                    <br>What am I ???
+                </div>
+                <button type="button" class="btn btn-outline-danger" id="give_up_button_3" onclick="show_answer(this.id)">&#129488;&nbsp; I Give Up &nbsp;&#129488;</button>
+                <div class="the_answer_to_the_riddle_container" id="answer_3">
+                    <div class="h2">The Answer :</div>
+                    <div class="the_answer_to_the_riddle_bottom_border"></div>
+                    <div class="the_riddle_answer">
+                        A candle .
+                    </div>
+                </div>
+            </div>
+            <div class="the_riddle_box" id="RIDDLE_4_BOX">
+                <div class="h2">Riddle 4 :</div>
+                <div class="riddle_bottom_border"></div>
+                <div class="the_riddle">
+                    I shave every day, but my beard stays the same.
+                    <br>
+                    What am I ???
+                </div>
+                <button type="button" class="btn btn-outline-danger" id="give_up_button_4" onclick="show_answer(this.id)">&#129488;&nbsp; I Give Up &nbsp;&#129488;</button>
+                <div class="the_answer_to_the_riddle_container" id="answer_4">
+                    <div class="h2">The Answer :</div>
+                    <div class="the_answer_to_the_riddle_bottom_border"></div>
+                    <div class="the_riddle_answer">
+                        A barber .
+                    </div>
+                </div>
+            </div>
+            <div class="the_riddle_box" id="RIDDLE_5_BOX">
+                <div class="h2">Riddle 5 :</div>
+                <div class="riddle_bottom_border"></div>
+                <div class="the_riddle">
+                    You see a boat filled with people, yet there isn’t a single person on board .
+                    <br>
+                    How is that possible ???
+                </div>
+                <button type="button" class="btn btn-outline-danger" id="give_up_button_5" onclick="show_answer(this.id)">&#129488;&nbsp; I Give Up &nbsp;&#129488;</button>
+                <div class="the_answer_to_the_riddle_container" id="answer_5">
+                    <div class="h2">The Answer :</div>
+                    <div class="the_answer_to_the_riddle_bottom_border"></div>
+                    <div class="the_riddle_answer">
+                        All the people on the boat are married .
+                    </div>
+                </div>
+            </div>
+            <div class="the_riddle_box" id="RIDDLE_6_BOX">
+                <div class="h2">Riddle 6 :</div>
+                <div class="riddle_bottom_border"></div>
+                <div class="the_riddle">
+                    What goes up but never comes down ???
+                </div>
+                <button type="button" class="btn btn-outline-danger" id="give_up_button_6" onclick="show_answer(this.id)">&#129488;&nbsp; I Give Up &nbsp;&#129488;</button>
+                <div class="the_answer_to_the_riddle_container" id="answer_6">
+                    <div class="h2">The Answer :</div>
+                    <div class="the_answer_to_the_riddle_bottom_border"></div>
+                    <div class="the_riddle_answer">
+                        Your age .
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../JavaScript/my_script.js"></script>
+    </body>
